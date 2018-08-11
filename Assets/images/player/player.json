@@ -1,0 +1,36 @@
+{
+
+"images": [
+    "player.png"
+],
+
+"framerate": 20,
+"frames": [
+    [1, 1, 107, 150, 0, 0, 0],
+    [1, 153, 100, 81, 0, 0, -5],
+    [110, 1, 99, 57, 0, -1, -29],
+    [110, 60, 99, 57, 0, -1, -29],
+    [110, 119, 100, 35, 0, 0, 0],
+    [103, 156, 72, 63, 0, -14, -8],
+    [177, 156, 50, 50, 0, 0, 0],
+    [211, 1, 25, 35, 0, 0, 0],
+    [211, 38, 25, 25, 0, 0, 0],
+    [211, 65, 20, 20, 0, 0, 0]
+],
+
+"animations": {
+    "Bullet_type": { "frames": [9, 0] },
+    "Plane_type": { "frames": [5, 1] },
+    "Explosion": { "frames": [2, 3] },
+    "Plane": { "frames": [4] },
+    "Parachute": { "frames": [6] },
+    "Bullet_type_1_icon": { "frames": [7] },
+    "Supply": { "frames": [8] }
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:b8d4a7196d177a375848ca15fea93a6a:dd33008cc4dcfb8672e1305496c2e453:86d5339b780aedd87b35e2b7c0a7e11b$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
+
+}

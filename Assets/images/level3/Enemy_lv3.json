@@ -1,0 +1,29 @@
+{
+
+"images": [
+    "Enemy_lv3.png"
+],
+
+"framerate": 20,
+"frames": [
+    [1, 1, 119, 185, 0, 0, 0],
+    [1, 1, 119, 185, 0, 0, 0],
+    [122, 1, 118, 185, 0, 0, 0],
+    [1, 188, 119, 185, 0, 0, 0],
+    [1, 188, 119, 185, 0, 0, 0],
+    [122, 188, 118, 184, 0, 0, -1],
+    [122, 374, 100, 126, 0, 0, 0],
+    [1, 375, 100, 125, 0, 0, -1]
+],
+
+"animations": {
+    "Dancer": { "frames": [2, 0, 3, 5, 4, 1] },
+    "Moto": { "frames": [6, 7] }
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:6466c16ee12599aa8ba5901842bd1a19:884d357a70218b77f7212f910dd53642:e2d640607447c1934fbf132f8c30f92d$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
+
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Authorname:BixinChen
+        Student Number:300716064
+        Last Modified by:Chen
+        Date last Modified:2018/7/30
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paper Plane</title>
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="/Content/app.css">
+</head>
+
+<body>
+    <!-- Game Lives Here -->
+    <canvas id="canvas" width="900" height="450"></canvas>
+
+    <!-- JavaScript Section -->
+    <!-- CreateJS Libraries -->
+    <script src="/node_modules/easeljs/lib/easeljs.min.js"></script>
+    <script src="/node_modules/tweenjs/lib/tweenjs.min.js"></script>
+    <script src="/node_modules/soundjs/lib/soundjs.min.js"></script>
+    <script src="/node_modules/preloadjs/lib/preloadjs.min.js"></script>
+
+
+
+    <!-- Game Scripts -->
+
+    <!-- Config Scripts -->
+    <script src="/Scripts/config/scene.js"></script>
+    <script src="/Scripts/config/screen.js"></script>
+
+    <!-- Math Scripts -->
+    <script src="/Scripts/math/Vec2.js"></script>
+
+    <!-- Manager Scripts -->
+    <script src="/Scripts/managers/game.js"></script>
+    <script src="/Scripts/managers/collision.js"></script>
+    <script src="/Scripts/managers/collision_2.js"></script>
+    <script src="/Scripts/managers/scoreboard.js"></script>
+    <script src="/Scripts/managers/twinkling.js"></script>
+    <script src="/Scripts/managers/blinking.js"></script>
+    <script src="/Scripts/managers/explosion_type_0.js"></script>
+    <script src="/Scripts/managers/explosion_type_1.js"></script>
+    <script src="/Scripts/managers/tracking_bullets.js"></script>
+
+    <!--Common Game Objects -->
+
+    <script src="/Scripts/objects/common/gameobject.js"></script>
+    <script src="/Scripts/objects/common/gameobjectanimation.js"></script>
+    <script src="/Scripts/objects/common/label.js"></script>
+    <script src="/Scripts/objects/common/button.js"></script>
+    <script src="/Scripts/objects/common/scene.js"></script>
+
+
+    <!-- player Game Objects-->
+    <script src="/Scripts/objects/player/player_plane.js"></script>
+    <script src="/Scripts/objects/player/player_plane_type_0.js"></script>
+    <script src="/Scripts/objects/player/player_plane_type_1.js"></script>
+    <script src="/Scripts/objects/player/player_plane_type_2.js"></script>
+    <Script src="Scripts/objects/player/player_explosion_type_0.js"></Script>
+    <Script src="Scripts/objects/player/player_explosion_type_1.js"></Script>
+    <script src="/Scripts/objects/player/player_bullet_type_0.js"></script>
+    <script src="/Scripts/objects/player/player_bullet_type_1.js"></script>
+    <script src="/Scripts/objects/player/player_bullet_type_2.js"></script>
+    <script src="/Scripts/objects/player/player_bullet_type_1_icon.js"></script>
+
+    <!-- supply-->
+    <script src="/Scripts/objects/supply/supply.js"></script>
+    <script src="/Scripts/objects/supply/parachute.js"></script>
+
+    <!-- explosion-->
+    <script src="/Scripts/objects/explosion/explosion_type_0.js"></script>
+
+    <!-- Strat-->
+    <script src="/Scripts/objects/start/background_anime_start.js"></script>
+    <script src="/Scripts/objects/start/background_top_start.js"></script>
+    <script src="/Scripts/objects/start/background_bottom_start.js"></script>
+    <script src="/Scripts/objects/start/ins_start.js"></script>
+    <!-- over-->
+    <script src="/Scripts/objects/gameover/background_anime_lose.js"></script>
+    <script src="/Scripts/objects/gameover/background_top_lose.js"></script>
+    <script src="/Scripts/objects/gameover/background_win.js"></script>
+
+    <!-- level 1 Game Objects-->
+    <script src="/Scripts/objects/level1/background_sky_lv1.js"></script>
+    <script src="/Scripts/objects/level1/background_wall_lv1.js"></script>
+    <script src="/Scripts/objects/level1/background_tree_lv1.js"></script>
+    <script src="Scripts/objects/level1/background_slide_lv1.js"></script>
+    <script src="Scripts/objects/level1/background_street_lamp_lv1.js"></script>
+
+
+    <script src="/Scripts/objects/level1/enemy_ufo_lv1.js"></script>
+    <script src="/Scripts/objects/level1/enemy_bullet_Laser_lv1.js"></script>
+    <script src="Scripts/objects/level1/enemy_alien_kid_lv1.js"></script>
+    <script src="Scripts/objects/level1/enemy_ufo_crack_lv1.js"></script>
+    <script src="Scripts/objects/level1/enemy_bullet_stone_lv1.js"></script>
+    <script src="Scripts/objects/level1/enemy_ufo_somke_lv1.js"></script>
+
+    <!-- level 2 Game Objects-->
+    <script src="/Scripts/objects/level2/background_supermarket_lv2.js"></script>
+    <script src="/Scripts/objects/level2/background_shelves_lv2.js"></script>
+    <script src="/Scripts/objects/level2/background_cart_lv2.js"></script>
+    <script src="/Scripts/objects/level2/background_box_lv2.js"></script>
+    <script src="/Scripts/objects/level2/background_poster_lv2.js"></script>
+
+    <script src="/Scripts/objects/level2/enemy_trump_lv2.js"></script>
+    <script src="/Scripts/objects/level2/enemy_trump_baby_lv2.js"></script>
+    <script src="/Scripts/objects/level2/emey_bullet_Laser_lv2.js"></script>
+    <script src="/Scripts/objects/level2/enemy_trump_crack_lv2.js"></script>
+    <script src="/Scripts/objects/level2/enemy_trump_somke_lv2.js"></script>
+    <script src="/Scripts/objects/level2/enemy_bullet_spat.js"></script>
+
+    <!-- level 3 Game Objects-->
+    <script src="/Scripts/objects/level3/background_school_lv3.js"></script>
+    <script src="/Scripts/objects/level3/background_sky_lv3.js"></script>
+    <script src="/Scripts/objects/level3/background_desk_lv3.js"></script>
+    <script src="/Scripts/objects/level3/enemy_dancer_kid_lv3.js"></script>
+    <script src="/Scripts/objects/level3/enemy_eye_kid_lv3.js"></script>
+    <script src="/Scripts/objects/level3/enemy_moto_kid_lv3.js"></script>
+    <script src="/Scripts/objects/level3/enemy_desk_kid_lv3.js"></script>
+    <script src="/Scripts/objects/level3/enemy_ufo_lv3.js"></script>
+    <script src="/Scripts/objects/level3/enemy_ufo_crack_lv3.js"></script>
+    <script src="/Scripts/objects/level3/enemy_ufo_somke_lv3.js"></script>
+    <script src="/Scripts/objects/level3/enemy_bullet_star_lv3.js"></script>
+
+    <!-- Scene Scripts -->
+    <script src="/Scripts/scenes/end.js"></script>
+    <script src="/Scripts/scenes/level_1.js"></script>
+    <script src="/Scripts/scenes/level_2.js"></script>
+    <script src="/Scripts/scenes/level_3.js"></script>
+    <script src="/Scripts/scenes/start.js"></script>
+    <script src="/Scripts/scenes/lose.js"></script>
+    <script src="/Scripts/scenes/instruction.js"></script>
+    <script src="/Scripts/scenes/level_skip.js"></script>
+
+    <!-- Core Script -->
+    <script src="/Scripts/core/game.js"></script>
+</body>
+
+</html>
